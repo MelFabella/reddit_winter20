@@ -83,7 +83,7 @@ class SubsController < ApplicationController
   # skip_before_action
   # skip_after_action
   # only except
-   
+
   # view, partial shared view reuse over and over again 
 
   # Sub (Model name singular)
@@ -133,7 +133,9 @@ class SubsController < ApplicationController
     # redirect_to subs_path
   end
 
-  private 
+  private
+  # { sub: {name: 'turkey'} permitted
+  # { sub: {name: 'turkey', age:11}} not permitted
     def sub_params
       params.require(:sub).permit(:name)
     end

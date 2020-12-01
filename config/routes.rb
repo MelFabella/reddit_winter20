@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   end
 
   resources :topics do
-    rsources :comments
+    resources :comments
   end
           # place holder for the number pk id 1
   # /subs/:sub_id/
@@ -22,5 +22,5 @@ Rails.application.routes.draw do
   # /subs/1/topics/3
   # params[:sub_id] = 1
   # rams[:id] = 3
-  
+
 end
